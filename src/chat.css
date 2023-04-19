@@ -235,16 +235,10 @@ body{
 		max-height: 400px;
 	}
  
-	.chatbtn {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex-wrap: wrap;
-	  }
-	  .chatbtn span {
-		margin-left: 0;
-		margin-top: 5px;
-	  }
+	.navbar-brand{
+      text-align: center;
+	  margin: 0 auto;		
+	}
 
 
 
