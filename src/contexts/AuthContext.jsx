@@ -16,7 +16,7 @@ const AuthContextProvider = ({ children }) => {
    useEffect(()=>{
    const cookie = read_cookie("islogin")
 
-   if(cookie == true){
+   if(cookie === true){
     return setIsLogin(true)
    }
    },[])
