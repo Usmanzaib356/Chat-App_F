@@ -104,7 +104,7 @@ useEffect(()=>{
   <div className="container-fluid ">
     <a className="navbar-brand"><h3> Lets Start Chats </h3></a>
     <form className="d-flex" >
-      <Link  href="" to="/logout" className="btn" type="submit">Logout</Link>
+      <Link  to="/logout" className="btn" type="submit">Logout</Link>
     </form>
   </div>
 </nav>   
