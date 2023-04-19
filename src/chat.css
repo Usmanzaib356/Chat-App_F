@@ -232,7 +232,7 @@ body{
 /* Modile Screen  */
 @media screen and (max-width: 600px) {
 	.card{
-	  max-height: 500px;
+	  max-height: 600px;
 	}
 
   }
