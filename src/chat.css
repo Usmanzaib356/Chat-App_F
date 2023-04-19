@@ -232,14 +232,9 @@ body{
 /* Modile Screen  */
 @media screen and (max-width: 600px) {
 	.card{
-	  max-height: 400px;
+	  max-height: 500px;
 	}
-   
-	.navbar-brand{
-	  text-align: center;
-	  display: block;
-	  margin: 0 auto;		
-	}
+
   }
   
   
