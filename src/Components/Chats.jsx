@@ -30,6 +30,7 @@ useEffect(()=>{
     (res)=>{
       console.log(res);
       setTexts(res.data)
+      const currentUserId = res.data._id
     }
    ).catch(
     (err)=>{
@@ -79,6 +80,7 @@ useEffect(()=>{
       console.log(res);
       setTexts([...texts, json]) 
       text.current.value = ''
+
       
    
     }
