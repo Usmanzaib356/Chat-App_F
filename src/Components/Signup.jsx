@@ -72,7 +72,7 @@ function Signup() {
                     <div class="three-body__dot"></div>
                     <div class="three-body__dot"></div>
                     </div>) : (
-                        "Sing Up"
+                        "Sign Up"
                     )
                     }
                     <p className='text-danger mt-2'>{msg}</p>   
