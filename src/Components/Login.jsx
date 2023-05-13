@@ -30,10 +30,6 @@
       e.preventDefault()
 
 
-      // cookies expiration date
-      const expirationDate = new Date();
-      const dataDone =   expirationDate.setDate(expirationDate.getDate() + 7);
-
       // Axois Post request
 
       const url = API_URL + "/signin"
@@ -47,7 +43,11 @@
           console.log(res);
           setIsLogin(true);
           setLoading(false)
-          bake_cookie("islogin", true, dataDone );
+          
+      // cookies expiration date
+      const expirationDate = new Date();
+      expirationDate.setDate(expirationDate.getDate() + 7);
+          bake_cookie("islogin", true, expirationDate );
           naviagte("/chat")
 
 
