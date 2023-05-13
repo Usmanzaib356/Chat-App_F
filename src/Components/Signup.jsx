@@ -31,7 +31,7 @@ function Signup() {
 
 
     // cookies expiration date
-    const expirationDate = new Date.now();
+    const expirationDate = new Date();
     expirationDate.setDate(expirationDate.getDate() + 7);
   
 
