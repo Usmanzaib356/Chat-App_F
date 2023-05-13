@@ -11,29 +11,29 @@ import Logout from './Components/Logout';
 
 function App() {
 
-  const [isLoading, setIsLoading] = useState(true); 
+  const [isLoading, setIsLoading] = useState(true);
 
   // Context Api
   const { islogin } = useAuth();
 
   useEffect(() => {
-    
+
     setIsLoading(false);
   }, [islogin]);
 
   if (isLoading) {
-    return <div className ="three-body">
-                    <div className ="three-body__dot"></div>
-                    <div className ="three-body__dot"></div>
-                    <div className ="three-body__dot"></div>
-                    </div>
+    return <div className="three-body">
+      <div className="three-body__dot"></div>
+      <div className="three-body__dot"></div>
+      <div className="three-body__dot"></div>
+    </div>
   }
 
   return (
     <>
       <Routes>
-        <Route path="/" element={<Signup />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
         <Route
           path="/chat"
           element={islogin ? <Chats /> : <Permission />}

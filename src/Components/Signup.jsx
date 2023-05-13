@@ -42,7 +42,7 @@ function Signup() {
     console.log(res);
     setIsLogin(true);
     setLoading(false)
-    bake_cookie("islogin",true)
+    bake_cookie("islogin",true,null)
     naviagte("/chat")
 
 
@@ -102,7 +102,7 @@ function Signup() {
 
               <div className="txt1 text-center p-t-54 p-b-20 ">
                 <span>  
-                  <Link to='login' className='text-dark'>Already have an account? Login</Link>
+                  <Link to='/' className='text-dark'>Already have an account? Login</Link>
                 </span>
               </div>
             </form>

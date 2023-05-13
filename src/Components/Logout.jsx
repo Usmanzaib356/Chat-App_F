@@ -9,7 +9,7 @@ function Logout() {
  delete_cookie("islogin")
 
  setTimeout(() => {
-    navigate("/login")
+    navigate("/")
  }, 2000);
 
 

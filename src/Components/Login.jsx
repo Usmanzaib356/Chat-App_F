@@ -42,7 +42,7 @@ function Login() {
     console.log(res);
     setIsLogin(true);
     setLoading(false)
-    bake_cookie("islogin",true)
+    bake_cookie("islogin",true,null)
     naviagte("/chat")
 
 
@@ -52,7 +52,7 @@ function Login() {
      console.log(err);
      setLoading(false)
      setIsLogin(false)
-     naviagte("/login")
+     naviagte("/")
      setMsg(err.response.data);
 
 
@@ -108,7 +108,7 @@ function Login() {
 
               <div className="txt1 text-center p-t-54 p-b-20 ">
                 <span>  
-                  <Link to='/' className='text-dark'>Already have an account? Singup</Link>
+                  <Link to='/signup' className='text-dark'>Don't have an account? Singup</Link>
                 </span>
               </div>
             </form>
