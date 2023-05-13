@@ -47,7 +47,7 @@
           console.log(res);
           setIsLogin(true);
           setLoading(false)
-          bake_cookie("islogin", true,  { expires: expirationDate });
+          bake_cookie("islogin", true, expirationDate );
           naviagte("/chat")
 
 

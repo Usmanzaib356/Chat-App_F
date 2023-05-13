@@ -33,7 +33,7 @@ function Signup() {
     // cookies expiration date
     const expirationDate = new Date();
     expirationDate.setDate(expirationDate.getDate() + 7);
-    console.log(expirationDate);
+  
 
     
    // Axois Post request
