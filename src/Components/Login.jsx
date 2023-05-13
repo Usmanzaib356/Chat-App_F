@@ -31,7 +31,7 @@
 
 
       // cookies expiration date
-      const expirationDate = new Date();
+      const expirationDate = new Date.now();
       expirationDate.setDate(expirationDate.getDate() + 7);
 
       // Axois Post request
