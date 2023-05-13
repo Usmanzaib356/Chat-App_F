@@ -32,7 +32,7 @@
 
       // cookies expiration date
       const expirationDate = new Date();
-      expirationDate.setDate(expirationDate.getDate() + 7);
+      const dataDone =   expirationDate.setDate(expirationDate.getDate() + 7);
 
       // Axois Post request
 
@@ -47,7 +47,7 @@
           console.log(res);
           setIsLogin(true);
           setLoading(false)
-          bake_cookie("islogin", true, expirationDate );
+          bake_cookie("islogin", true, dataDone );
           naviagte("/chat")
 
 
