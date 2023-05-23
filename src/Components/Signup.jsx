@@ -45,7 +45,9 @@ function Signup() {
     console.log(res);
     setIsLogin(true);
     setLoading(false)
-    Cookies.set("islogin",true)
+
+
+    Cookies.set("islogin",true,{ expires: 7 })
     naviagte("/chat")
 
    }).catch(
