@@ -16,19 +16,13 @@ function App() {
   // Context Api
   const { islogin } = useAuth();
 
-  // navigate
-  const navigate = useNavigate();
 
 
   useEffect(() => {
 
     setIsLoading(false)
 
-    if (islogin) {
-      return navigate('/chat');
-    }
-
-  }, [islogin,navigate]);
+  }, [islogin]);
 
   if (isLoading) {
     return <div className="three-body">
@@ -45,7 +39,7 @@ function App() {
         <Route path="/signup" element={<Signup />} />
         <Route
           path="/chat"
-          element={islogin ? <Chats /> : <Permission />}
+          element={islogin ?( <Chats />) :( <Permission />)}
         />
         <Route path="/logout" element={<Logout />} />
         <Route path="*" element={<Error />} />
