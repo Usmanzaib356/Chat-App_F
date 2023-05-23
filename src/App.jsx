@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './index.css';
 import Chats from './Components/Chats';
 import Login from './Components/Login';
-import { Routes, Route, useNavigate } from 'react-router-dom';
+import { Routes, Route} from 'react-router-dom';
 import Signup from './Components/Signup';
 import Error from './Components/Error';
 import Permission from './Components/Permission';
@@ -39,7 +39,7 @@ function App() {
         <Route path="/signup" element={<Signup />} />
         <Route
           path="/chat"
-          element={islogin ?( <Chats />) :( <Permission />)}
+          element={islogin ? <Chats /> : <Permission />}
         />
         <Route path="/logout" element={<Logout />} />
         <Route path="*" element={<Error />} />
