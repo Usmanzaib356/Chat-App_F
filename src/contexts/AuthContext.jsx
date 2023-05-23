@@ -1,3 +1,4 @@
+import Cookies from "js-cookie";
 import React, { createContext, useEffect, useState } from "react";
 import { read_cookie } from "sfcookies";
 
@@ -14,7 +15,7 @@ const AuthContextProvider = ({ children }) => {
 
 
    useEffect(()=>{
-   const cookie = read_cookie("islogin")
+   const cookie = Cookies.get("islogin")
 
    if(cookie === true){
     return setIsLogin(true)

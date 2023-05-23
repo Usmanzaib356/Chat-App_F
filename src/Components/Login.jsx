@@ -2,7 +2,8 @@
   import React, { useRef, useState } from 'react'
   import { Link, useNavigate } from 'react-router-dom'
   import useAuth from "../hooks/useAuth"
-  import { bake_cookie } from 'sfcookies'
+  import Cookies from 'js-cookie';
+
   function Login() {
 
 
@@ -43,11 +44,7 @@
           console.log(res);
           setIsLogin(true);
           setLoading(false)
-          
-      // cookies expiration date
-      const expirationDate = new Date();
-      expirationDate.setDate(expirationDate.getDate() + 7);
-          bake_cookie("islogin", true, expirationDate );
+          Cookies.set("islogin",true)
           naviagte("/chat")
 
 

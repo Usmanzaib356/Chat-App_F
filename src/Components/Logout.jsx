@@ -1,12 +1,13 @@
+import Cookies from 'js-cookie';
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
-import { delete_cookie } from 'sfcookies'
+
 
 function Logout() {
 
   const  navigate = useNavigate()
 
- delete_cookie("islogin")
+ Cookies.remove("islogin")
 
  setTimeout(() => {
     navigate("/")
