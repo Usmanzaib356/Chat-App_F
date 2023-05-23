@@ -44,6 +44,7 @@
           console.log(res);
           setIsLogin(true);
           setLoading(false)
+          naviagte("/chat")
           const expirationDate = new Date();
     expirationDate.setDate(expirationDate.getDate() + 7); 
     Cookies.set("islogin", true, { expires: expirationDate });
