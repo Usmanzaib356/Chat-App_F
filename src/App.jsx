@@ -28,7 +28,7 @@ function App() {
       return navigate('/chat');
     }
 
-  }, [islogin]);
+  }, [islogin,navigate]);
 
   if (isLoading) {
     return <div className="three-body">
